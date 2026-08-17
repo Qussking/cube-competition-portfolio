@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>魔方赛事复盘工具｜作品展示</title>
+  <style>
+    :root{--bg:#f5f6f8;--ink:#15171a;--muted:#70757d;--card:#fff;--accent:#e63946}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Microsoft YaHei",sans-serif;line-height:1.6}
+    .wrap{max-width:1120px;margin:auto;padding:56px 24px 72px}.eyebrow{color:var(--accent);font-weight:700;letter-spacing:.12em;font-size:13px;text-transform:uppercase}
+    h1{font-size:clamp(34px,6vw,70px);line-height:1.05;margin:16px 0 18px;letter-spacing:-.04em}.intro{max-width:680px;color:var(--muted);font-size:18px;margin-bottom:44px}
+    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.card{background:var(--card);border-radius:18px;overflow:hidden;box-shadow:0 8px 30px #1b243012}.media{width:100%;display:block;background:#111;aspect-ratio:16/9;object-fit:cover}.card img{object-fit:cover}.body{padding:22px 24px 25px}.tag{font-size:12px;color:var(--accent);font-weight:700}.body h2{font-size:22px;margin:7px 0 8px}.body p{color:var(--muted);margin:0}
+    .wide{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr}.wide .media{height:100%;aspect-ratio:auto}.wide .body{display:flex;flex-direction:column;justify-content:center;padding:36px}
+    footer{color:var(--muted);font-size:14px;margin-top:52px;border-top:1px solid #dfe1e5;padding-top:20px}
+    @media(max-width:700px){.wrap{padding-top:36px}.grid,.wide{display:block}.card{margin-bottom:18px}.wide .media{aspect-ratio:16/9}.wide .body{padding:22px 24px 25px}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <div class="eyebrow">Product Case Study · 2025</div>
+    <h1>魔方赛事复盘工具</h1>
+    <p class="intro">面向魔方赛事的智能复盘产品。通过视觉识别、算法分析与可视化交互，帮助选手和教练更高效地理解比赛过程、定位问题并持续提升成绩。</p>
+    <section class="grid">
+      <article class="card"><video class="media" controls preload="metadata" src="assets/frontend.mp4"></video><div class="body"><div class="tag">INTERACTION / UI</div><h2>前端 UI 复盘界面</h2><p>从数据结果到操作过程的可视化复盘体验。</p></div></article>
+      <article class="card"><video class="media" controls preload="metadata" src="assets/backend.mp4"></video><div class="body"><div class="tag">TECHNOLOGY / ALGORITHM</div><h2>后端识别与算法架构</h2><p>展示魔方状态识别、数据处理与算法分析流程。</p></div></article>
+      <article class="card wide"><img class="media" src="assets/news.jpg" alt="魔方比赛复盘产品刊登中国青年报"/><div class="body"><div class="tag">PRESS / RECOGNITION</div><h2>产品成果</h2><p>魔方比赛复盘产品获《中国青年报》刊登报道。</p></div></article>
+      <article class="card"><img class="media" src="assets/pad.jpg" alt="Pad 端产品展示"/><div class="body"><div class="tag">MULTI-DEVICE</div><h2>Pad 端展示</h2><p>适配大屏场景的赛事数据与复盘界面。</p></div></article>
+    </section>
+    <footer>魔方赛事复盘工具 · 作品展示</footer>
+  </main>
+</body>
+</html>
